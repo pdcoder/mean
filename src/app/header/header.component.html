@@ -1,3 +1,11 @@
-<p>
-  header works!
-</p>
+<mat-toolbar color="primary">
+  <span>
+    <a [routerLink]="['/routePath']" routerLinkActive="router-link-active">My Messages</a> 
+  </span>
+  <span class="spacer"></span>
+    <ul>
+      <li>
+        <a mat-button [routerLink]="['/create']" routerLinkActive="mat-accent" >Create</a>
+      </li>
+    </ul>
+</mat-toolbar>
